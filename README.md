@@ -1,69 +1,60 @@
-# Welcome to your Lovable project
+Here's a well-structured README for your repository:
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/0692f3c4-cb3b-4bc6-ab96-59cc0ae33a91
+# 🛍️ META STORE
 
-## How can I edit this code?
+META STORE is a modern e-commerce platform designed for seamless online shopping experiences. It offers a user-friendly interface, powerful product management, and secure transactions.
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- 🔍 **Product Browsing** – Search and filter products effortlessly.  
+- 🛒 **Cart & Checkout** – Add items to the cart and complete purchases securely.  
+- 🔐 **User Authentication** – Secure login and registration system.  
+- 📊 **Admin Dashboard** – Manage products, orders, and users.  
+- 🌐 **Responsive UI** – Optimized for mobile and desktop.  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0692f3c4-cb3b-4bc6-ab96-59cc0ae33a91) and start prompting.
+## 🏗️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React.js, Next.js, Tailwind CSS  
+- **State Management**: Redux Toolkit  
+- **Animations**: Framer Motion  
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB  
+- **Authentication**: Firebase/Auth or JWT  
 
-**Use your preferred IDE**
+## 🛠️ Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Clone the repository and install dependencies:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/rutvikghate30/shopliance-hub.git
+cd shopliance-hub
+npm install
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🔧 Running the Project
 
-# Step 3: Install the necessary dependencies.
-npm i
+Start the development server:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+For production build:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```sh
+npm run build
+npm start
+```
 
-**Use GitHub Codespaces**
+## 🤝 Contributing
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Contributions are welcome! Feel free to fork the repo and submit pull requests.
 
-## What technologies are used for this project?
+## 📄 License
 
-This project is built with .
+This project is licensed under the [MIT License](LICENSE).
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0692f3c4-cb3b-4bc6-ab96-59cc0ae33a91) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
