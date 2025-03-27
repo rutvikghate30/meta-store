@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <Link 
             to="/" 
-            className="text-xl font-medium tracking-tight transition-transform hover:scale-105"
+            className="text-xl font-medium tracking-tighter text-blue-600 transition-transform hover:scale-105"
           >
             META STORE
           </Link>
