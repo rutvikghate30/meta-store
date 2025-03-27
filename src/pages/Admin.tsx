@@ -214,8 +214,8 @@ const Admin = () => {
                 
                 <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                   <DialogTrigger asChild>
-                    <Button onClick={() => setEditingProduct(newProductTemplate)}>
-                      <PlusCircle className="h-4 w-4 mr-2" />
+                    <Button className='text-white' onClick={() => setEditingProduct(newProductTemplate)}>
+                      <PlusCircle className="h-4 w-4 mr-2 text-white" />
                       Add Product
                     </Button>
                   </DialogTrigger>
@@ -354,7 +354,7 @@ const Admin = () => {
                       <Button variant="outline" onClick={() => setIsDialogOpen(false)}>
                         Cancel
                       </Button>
-                      <Button onClick={handleSaveProduct}>Save Product</Button>
+                      <Button className='text-white' onClick={handleSaveProduct}>Save Product</Button>
                     </DialogFooter>
                   </DialogContent>
                 </Dialog>
