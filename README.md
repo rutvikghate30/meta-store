@@ -28,7 +28,7 @@ META STORE is a modern e-commerce platform designed for seamless online shopping
 Clone the repository and install dependencies:
 
 ```sh
-git clone https://github.com/rutvikghate30/shopliance-hub.git
+[git clone https://github.com/rutvikghate30/meta-store]
 cd shopliance-hub
 npm install
 ```
