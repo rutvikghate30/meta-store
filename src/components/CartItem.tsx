@@ -47,7 +47,7 @@ const CartItem: React.FC<CartItemProps> = ({ item }) => {
       <div className="flex flex-1 flex-col">
         <div className="flex justify-between">
           <Link to={`/product/${item.id}`}>
-            <h3 className="font-medium hover:text-primary transition-colors">{item.name}</h3>
+            <h3 className="font-medium hover:text-black transition-colors">{item.name}</h3>
           </Link>
           <p className="font-medium">${(price * item.quantity).toFixed(2)}</p>
         </div>

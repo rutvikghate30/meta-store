@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <Link 
             to="/" 
-            className="text-xl font-medium tracking-tighter text-blue-600 transition-transform hover:scale-105"
+            className="text-xl font-medium tracking-tighter transition-transform hover:scale-105"
           >
             META STORE
           </Link>
@@ -77,14 +77,14 @@ const Navbar: React.FC = () => {
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="ghost" size="icon" className="relative group">
-              <Search className="h-5 w-5 transition-colors group-hover:stroke-primary" />
+              <Search className="h-5 w-5 transition-colors group-hover:stroke-black" />
             </Button>
             
             <Link to="/cart">
               <Button variant="ghost" size="icon" className="relative group">
-                <ShoppingCart className="h-5 w-5 transition-colors group-hover:stroke-primary" />
+                <ShoppingCart className="h-5 w-5 transition-colors group-hover:stroke-black" />
                 {itemCount > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs font-medium rounded-full w-5 h-5 flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 bg-black text-black-foreground text-xs font-medium rounded-full w-5 h-5 flex items-center justify-center">
                     {itemCount}
                   </span>
                 )}
@@ -108,7 +108,7 @@ const Navbar: React.FC = () => {
             ) : (
               <Link to="/login">
                 <Button variant="ghost" size="icon" className="group">
-                  <User className="h-5 w-5 transition-colors group-hover:stroke-primary" />
+                  <User className="h-5 w-5 transition-colors group-hover:stroke-black" />
                 </Button>
               </Link>
             )}
@@ -119,7 +119,7 @@ const Navbar: React.FC = () => {
             <Link to="/cart" className="relative">
               <ShoppingCart className="h-5 w-5" />
               {itemCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs font-medium rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -top-1 -right-1 bg-black text-black-foreground text-xs font-medium rounded-full w-5 h-5 flex items-center justify-center">
                   {itemCount}
                 </span>
               )}

@@ -26,13 +26,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, featured = false }) 
     <Link to={`/product/${product.id}`}>
       <div 
         className={cn(
-          "group relative flex flex-col overflow-hidden rounded-lg transition-all duration-300 hover-lift bg-card hover:shadow-elegant-lg border border-primary/10",
+          "group relative flex flex-col overflow-hidden rounded-lg transition-all duration-300 hover-lift bg-card hover:shadow-elegant-lg border border-black/10",
           featured && "md:row-span-2 md:col-span-2"
         )}
       >
         {/* Product Image */}
         <div className={cn(
-          "relative aspect-square w-full overflow-hidden bg-primary/5",
+          "relative aspect-square w-full overflow-hidden bg-black/5",
           featured && "md:aspect-[4/3]"
         )}>
           <img 
@@ -43,7 +43,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, featured = false }) 
           
           {/* Discount Badge */}
           {product.discountPrice && (
-            <div className="absolute top-2 left-2 bg-primary text-primary-foreground text-xs font-medium px-2 py-1 rounded-full">
+            <div className="absolute top-2 text-white left-2 bg-black text-black-foreground text-xs font-medium px-2 py-1 rounded-full">
               {Math.round(((product.price - product.discountPrice) / product.price) * 100)}% OFF
             </div>
           )}
@@ -53,9 +53,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, featured = false }) 
             <Button 
               size="icon" 
               onClick={handleAddToCart}
-              className="bg-background/80 backdrop-blur-sm hover:bg-primary/20 shadow-md border border-primary/20"
+              className="bg-background/80 backdrop-blur-sm hover:bg-black/20 shadow-md border border-black/20"
             >
-              <ShoppingCart className="h-4 w-4 text-primary" />
+              <ShoppingCart className="h-4 w-4 text-black" />
             </Button>
           </div>
         </div>
@@ -64,7 +64,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, featured = false }) 
         <div className="flex flex-col p-4">
           <div className="flex items-center justify-between mb-1">
             <h3 className={cn(
-              "font-medium transition-colors group-hover:text-primary",
+              "font-medium transition-colors group-hover:text-black",
               featured ? "text-lg" : "text-base"
             )}>
               {product.name}
@@ -72,7 +72,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, featured = false }) 
             
             {/* Rating */}
             <div className="flex items-center">
-              <Star className="h-3.5 w-3.5 fill-primary text-primary mr-1" />
+              <Star className="h-3.5 w-3.5 fill-black text-black mr-1" />
               <span className="text-xs">{product.rating}</span>
             </div>
           </div>
@@ -85,7 +85,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, featured = false }) 
           <div className="flex items-center space-x-2 mt-auto">
             {product.discountPrice ? (
               <>
-                <span className="font-medium text-primary">
+                <span className="font-medium text-black">
                   ${product.discountPrice.toFixed(2)}
                 </span>
                 <span className="text-sm text-muted-foreground line-through">
@@ -93,7 +93,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, featured = false }) 
                 </span>
               </>
             ) : (
-              <span className="font-medium text-primary">${product.price.toFixed(2)}</span>
+              <span className="font-medium text-black">${product.price.toFixed(2)}</span>
             )}
           </div>
         </div>

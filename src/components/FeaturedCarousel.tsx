@@ -34,8 +34,8 @@ const FeaturedCarousel: React.FC<FeaturedCarouselProps> = ({ products }) => {
           ))}
         </CarouselContent>
         <div className="hidden sm:block">
-          <CarouselPrevious className="absolute -left-4 top-1/2 -translate-y-1/2 border border-primary/20 bg-background/80 backdrop-blur-sm hover:bg-primary/10" />
-          <CarouselNext className="absolute -right-4 top-1/2 -translate-y-1/2 border border-primary/20 bg-background/80 backdrop-blur-sm hover:bg-primary/10" />
+          <CarouselPrevious className="absolute -left-4 top-1/2 -translate-y-1/2 border border-black/20 bg-background/80 backdrop-blur-sm hover:bg-black/10" />
+          <CarouselNext className="absolute -right-4 top-1/2 -translate-y-1/2 border border-black/20 bg-background/80 backdrop-blur-sm hover:bg-black/10" />
         </div>
       </Carousel>
     </div>
