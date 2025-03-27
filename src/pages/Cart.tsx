@@ -37,7 +37,7 @@ const Cart = () => {
                 Looks like you haven't added any products to your cart yet.
               </p>
               <Button asChild>
-                <Link to="/products">
+                <Link to="/products" className='text-white'>
                   Browse Products
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -99,7 +99,7 @@ const Cart = () => {
                   </div>
                   
                   <Button className="w-full mt-6" size="lg" asChild>
-                    <Link to={user ? "/checkout" : "/login?redirect=checkout"}>
+                    <Link className='text-white' to={user ? "/checkout" : "/login?redirect=checkout"}>
                       Proceed to Checkout
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>

@@ -116,7 +116,7 @@ const Index = () => {
                 Our products combine minimalist aesthetics with exceptional functionality. Each piece is crafted with meticulous attention to detail and a commitment to quality materials.
               </p>
               
-              <Button className="bg-black hover:bg-black/90" asChild>
+              <Button className="bg-black text-white hover:bg-black/90" asChild>
                 <Link to="/products">Shop Collection</Link>
               </Button>
             </div>

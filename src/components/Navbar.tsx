@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
               <Button variant="ghost" size="icon" className="relative group">
                 <ShoppingCart className="h-5 w-5 transition-colors group-hover:stroke-black" />
                 {itemCount > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-black text-black-foreground text-xs font-medium rounded-full w-5 h-5 flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 bg-black  text-white text-xs font-medium rounded-full w-5 h-5 flex items-center justify-center">
                     {itemCount}
                   </span>
                 )}
