@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -84,12 +85,63 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'fade-in': {
+                    '0%': { opacity: '0' },
+                    '100%': { opacity: '1' }
+                },
+                'fade-out': {
+                    '0%': { opacity: '1' },
+                    '100%': { opacity: '0' }
+                },
+                'slide-up': {
+                    '0%': { transform: 'translateY(10px)', opacity: '0' },
+                    '100%': { transform: 'translateY(0)', opacity: '1' }
+                },
+                'slide-down': {
+                    '0%': { transform: 'translateY(-10px)', opacity: '0' },
+                    '100%': { transform: 'translateY(0)', opacity: '1' }
+                },
+                'scale-up': {
+                    '0%': { transform: 'scale(0.95)', opacity: '0' },
+                    '100%': { transform: 'scale(1)', opacity: '1' }
+                },
+                'pulse-soft': {
+                    '0%, 100%': { opacity: '1' },
+                    '50%': { opacity: '0.8' }
+                },
+                'spin-slow': {
+                    '0%': { transform: 'rotate(0deg)' },
+                    '100%': { transform: 'rotate(360deg)' }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'fade-in': 'fade-in 0.5s ease-out',
+                'fade-out': 'fade-out 0.5s ease-out',
+                'slide-up': 'slide-up 0.5s ease-out',
+                'slide-down': 'slide-down 0.5s ease-out',
+                'scale-up': 'scale-up 0.4s ease-out',
+                'pulse-soft': 'pulse-soft 2s infinite ease-in-out',
+                'spin-slow': 'spin-slow 6s linear infinite'
+			},
+            transitionProperty: {
+                'height': 'height',
+                'spacing': 'margin, padding',
+            },
+            transitionTimingFunction: {
+                'bounce-soft': 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+                'out-soft': 'cubic-bezier(0.16, 1, 0.3, 1)',
+            },
+            boxShadow: {
+                'elegant': '0 4px 20px -1px rgb(0 0 0 / 0.05)',
+                'elegant-lg': '0 8px 25px -5px rgb(0 0 0 / 0.08)',
+                'button': '0 2px 4px rgb(0 0 0 / 0.04), 0 1px 2px rgb(0 0 0 / 0.06)',
+            },
+            backdropBlur: {
+                'xs': '2px',
+            },
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
