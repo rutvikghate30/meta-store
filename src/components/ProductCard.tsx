@@ -26,13 +26,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, featured = false }) 
     <Link to={`/product/${product.id}`}>
       <div 
         className={cn(
-          "group relative flex flex-col overflow-hidden rounded-lg transition-all duration-300 hover-lift bg-card hover:shadow-elegant-lg",
+          "group relative flex flex-col overflow-hidden rounded-lg transition-all duration-300 hover-lift bg-card hover:shadow-elegant-lg border border-primary/10",
           featured && "md:row-span-2 md:col-span-2"
         )}
       >
         {/* Product Image */}
         <div className={cn(
-          "relative aspect-square w-full overflow-hidden bg-secondary/20",
+          "relative aspect-square w-full overflow-hidden bg-primary/5",
           featured && "md:aspect-[4/3]"
         )}>
           <img 
@@ -53,9 +53,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, featured = false }) 
             <Button 
               size="icon" 
               onClick={handleAddToCart}
-              className="bg-background/80 backdrop-blur-sm hover:bg-background/95 shadow-md"
+              className="bg-background/80 backdrop-blur-sm hover:bg-primary/20 shadow-md border border-primary/20"
             >
-              <ShoppingCart className="h-4 w-4" />
+              <ShoppingCart className="h-4 w-4 text-primary" />
             </Button>
           </div>
         </div>
@@ -85,7 +85,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, featured = false }) 
           <div className="flex items-center space-x-2 mt-auto">
             {product.discountPrice ? (
               <>
-                <span className="font-medium">
+                <span className="font-medium text-primary">
                   ${product.discountPrice.toFixed(2)}
                 </span>
                 <span className="text-sm text-muted-foreground line-through">
@@ -93,7 +93,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, featured = false }) 
                 </span>
               </>
             ) : (
-              <span className="font-medium">${product.price.toFixed(2)}</span>
+              <span className="font-medium text-primary">${product.price.toFixed(2)}</span>
             )}
           </div>
         </div>
