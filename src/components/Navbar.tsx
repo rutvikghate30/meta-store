@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
             to="/" 
             className="text-xl font-medium tracking-tight transition-transform hover:scale-105"
           >
-            ACME STORE
+            META STORE
           </Link>
           
           {/* Desktop Navigation */}

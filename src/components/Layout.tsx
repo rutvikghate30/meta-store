@@ -32,7 +32,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="container-tight">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h5 className="text-lg font-medium mb-4">ACME Store</h5>
+              <h5 className="text-lg font-medium mb-4">Meta Store</h5>
               <p className="text-muted-foreground">
                 We create beautiful, functional products with a focus on simplicity and user experience.
               </p>
@@ -64,13 +64,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <address className="not-italic text-muted-foreground">
                 <p>123 Design Street</p>
                 <p>San Francisco, CA 94103</p>
-                <p className="mt-2">contact@acmestore.com</p>
+                <p className="mt-2">contact@metastore.com</p>
               </address>
             </div>
           </div>
           
           <div className="mt-8 pt-4 border-t text-center text-muted-foreground text-sm">
-            <p>&copy; {new Date().getFullYear()} ACME Store. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Meta Store. All rights reserved.</p>
           </div>
         </div>
       </footer>

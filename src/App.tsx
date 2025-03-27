@@ -21,16 +21,23 @@ import NotFound from "./pages/NotFound";
 // Need framer-motion for animations
 import { MotionConfig } from "framer-motion";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      staleTime: 60 * 1000,
+    },
+  },
+});
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <AuthProvider>
         <CartProvider>
-          <MotionConfig>
+          <MotionConfig reducedMotion="user">
             <Toaster />
-            <Sonner />
+            <Sonner position="top-right" closeButton toastOptions={{ duration: 3000 }} />
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<Index />} />
